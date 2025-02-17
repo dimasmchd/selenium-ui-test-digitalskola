@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "mocka": "^0.0.1"
+  },
+  "dependencies": {
+    "assert": "^2.1.0",
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.28.1"
+  },
+  "name": "web-automation-fundamental",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
