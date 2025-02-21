@@ -16,13 +16,16 @@ async function saucedemologin() {
         .findElement(By.name('login-button')).click();
         await driver.findElement(By.id('add-to-cart-sauce-labs-bike-light')).click();
         await driver.findElement(By.id('root')).click();
-        await driver.wait(until.elementLocated(By.id('root')));
-        console.log('Berhasil menambahkan item ke cart');
-  
+        // Ganti pencarian elemen menggunakan XPath
+        let cartBadge = await driver.wait(until.elementLocated(By.xpath('//*[@id="shopping_cart_container"]/a/span')), 5000);
+
+        let cartCount = await cartBadge.getText();
+        if (cartCount === '1') {
+            console.log(' Berhasil menambahkan item ke cart');
+        }
     }
     catch (error) {
-        console.log('Gagal Menambahkan item ke cart');
-    }  
+        console.log('Gagal Menambahkan item ke cart');}  
     finally {
         
         await driver.quit();
