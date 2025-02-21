@@ -25,7 +25,7 @@ async function saucedemologin() {
         }
     }
     catch (error) {
-        console.log('Gagal Menambahkan item ke cart');}  
+        console.log('Gagal Menambahkan item ke cart!!');}  
     finally {
         
         await driver.quit();
