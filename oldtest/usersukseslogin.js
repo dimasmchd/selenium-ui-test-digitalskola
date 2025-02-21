@@ -3,7 +3,7 @@ const assert = require('assert');
 
 
 
-async function saucedemologin() {
+async function usersukseslogin() {
     let driver = await new Builder().forBrowser('chrome').build();
     try {
         await driver.get('https://www.saucedemo.com/');
@@ -30,4 +30,4 @@ async function saucedemologin() {
     
 }
 
-saucedemologin();
+usersukseslogin();
