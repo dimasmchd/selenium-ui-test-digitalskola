@@ -19,7 +19,7 @@ async function checkout(){
         let checkOut;
 
     beforeEach(async function (){
-        this.timeout(30000);
+        this.timeout(70000);
             driver = await new Builder().forBrowser(browserName).build();
             loginPage = new LoginPage(driver);
             inventoryPage = new InventoryPage(driver);

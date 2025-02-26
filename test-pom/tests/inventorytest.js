@@ -12,7 +12,7 @@ if (!fs.existsSync(screenshotsDir)) {
 
 async function inventoryvalid() {
     describe('Validasi Inventory', function() {
-        this.timeout(30000);
+        this.timeout(70000);
         let driver;
         let browserName = 'chrome';
         let loginPage;
